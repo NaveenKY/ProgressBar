@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Progress Bar</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/progress.css" rel="stylesheet">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#myModal').modal({ keyboard: false });
+			setTimeout(function(){ 
+				$('#myModal').modal('hide'); }, 
+			2000);
+		});
+	</script>
+    </head>
+    <body>
+        <div class="modal col-xs-12" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog dialog-modal">
+                <div class="modal-content dialog-modal-content col-xs-12">
+			<div class="loading-progress-bar-container">
+				<img src="image/progress_spinner.gif" class="loading-progress-bar" /></div>
+			</div>
+                </div>
+            </div>
+    </body>
+</html>
